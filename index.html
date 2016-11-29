@@ -14,9 +14,10 @@
   </head>
   <body>
     <div class="container container-table container-fluid">
-    <div class="row vertical-center-row">
+      <div class="row srchrw">
+      <div class="row vertical-center-row">
         <!-- Modal -->
-      <div id="myModal" class="modal fade" role="dialog">
+        <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -36,17 +37,18 @@
       </div>
 	      <div class="row srchrw">
 	        <div>
-		       <!-- Update the searchblox server location below in the action field-->
-		       <!-- Change the action to http://localhost:8080/searchblox/plugin/index.html shown below if you want faceted search results -->
-		        <!-- <form action="http://localhost:8080/searchblox/plugin/index.html" method="get"> -->
+		          <!-- Update the searchblox server location below in the action field-->
+		          <!-- Change the action to http://localhost:8080/searchblox/plugin/index.html shown below if you want faceted search results -->
+		          <!-- <form action="http://localhost:8080/searchblox/plugin/index.html" method="get"> -->
 				    <form action="http://localhost:8080/searchblox/servlet/SearchServlet" method="get">
-					   <!--To add search parameter use the syntax as in the line below-->
-					   <!--<input type="hidden" name="col" value="2">-->
+					    <!--To add search parameter use the syntax as in the line below-->
+					    <!--<input type="hidden" name="col" value="2">-->
 				      <div class="input-group custom-search-form">
 				        <input type="text" class="form-control" name="query" value="">
 	        			<span class="input-group-btn">
 				            <button class="btn btn-default srchbtn" type="search">
-				              <span class="glyphicon glyphicon-search"></span>
+				              <span class="glyphicon glyphicon-search">
+                      </span>
 				            </button>
 				        </span>
 				      </div>
