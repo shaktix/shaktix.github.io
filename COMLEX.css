@@ -44,11 +44,10 @@ td .btn {
     background-color: #FFFFFF;
 }
 
-  .srchrw {
-	  padding-top: 10px;
-	  padding-bottom: 60px;
-  }
+.srchrw {
+	padding-bottom: 60px;
+}
 
-  .custom-search-form{
-margin-top:5px;
+.custom-search-form{
+  margin-top:5px;
 }
