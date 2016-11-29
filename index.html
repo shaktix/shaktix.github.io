@@ -15,10 +15,27 @@
   <body>
     <div class="container container-table container-fluid">
       <div class="row srchrw">
-      <div class="row vertical-center-row">
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+        <div>
+            <!-- Update the searchblox server location below in the action field-->
+            <!-- Change the action to http://localhost:8080/searchblox/plugin/index.html shown below if you want faceted search results -->
+            <!-- <form action="http://localhost:8080/searchblox/plugin/index.html" method="get"> -->
+          <form action="http://localhost:8080/searchblox/servlet/SearchServlet" method="get">
+            <!--To add search parameter use the syntax as in the line below-->
+            <!--<input type="hidden" name="col" value="2">-->
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" name="query" value="">
+              <span class="input-group-btn">
+                  <button class="btn btn-default srchbtn" type="search">
+                    <span class="glyphicon glyphicon-search">
+                    </span>
+                  </button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
@@ -33,71 +50,52 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
             </div>
+          </div>
         </div>
+      <div class="row vertical-center-row">
+        <table class="table no-border">
+          <tbody>
+            <tr>
+              <td></td>
+              <td><button type="button" class="btn btn-default text-center btn-block" data-toggle="modal" data-target="#myModal">Define</button></td>
+              <td></td>
+            </tr>
+            <tr class="blank_row"><td colspan="3"></td></tr>
+            <tr class="blank_row"><td colspan="3"></td></tr>
+            <tr class="blank_row"><td colspan="3"></td></tr>
+            <tr>
+              <td><button type="button" class="btn btn-default text-center btn-block" data-toggle="modal" data-target="#myModal">Treatment</button></td>
+              <td><button type="button" class="btn btn-danger text-center btn-block" data-toggle="modal" data-target="#myModal"><strong>Disease</strong></button></td>
+              <td><button type="button" class="btn btn-default text-center btn-block " data-toggle="modal" data-target="#myModal">Signs/Symptoms</button></td>
+            </tr>
+            <tr class="blank_row"><td colspan="3"></td></tr>
+            <tr class="blank_row"><td colspan="3"></td></tr>
+            <tr class="blank_row"><td colspan="3"></td></tr>
+            <tr>
+              <td></td>
+              <td><button type="button" class="btn btn-default text-center btn-block" data-toggle="modal" data-target="#myModal">Diagnosis</button></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="../image/Varus_Valgus_test.png" id="VarusValgus">test link for popover</a>
+        <footer class="container">
+    		  <a href="index.html" class="btn btn-link">Home</a>
+        </footer>
       </div>
-	      <div class="row srchrw">
-	        <div>
-		          <!-- Update the searchblox server location below in the action field-->
-		          <!-- Change the action to http://localhost:8080/searchblox/plugin/index.html shown below if you want faceted search results -->
-		          <!-- <form action="http://localhost:8080/searchblox/plugin/index.html" method="get"> -->
-				    <form action="http://localhost:8080/searchblox/servlet/SearchServlet" method="get">
-					    <!--To add search parameter use the syntax as in the line below-->
-					    <!--<input type="hidden" name="col" value="2">-->
-				      <div class="input-group custom-search-form">
-				        <input type="text" class="form-control" name="query" value="">
-	        			<span class="input-group-btn">
-				            <button class="btn btn-default srchbtn" type="search">
-				              <span class="glyphicon glyphicon-search">
-                      </span>
-				            </button>
-				        </span>
-				      </div>
-				    </form>
-				  </div>
-			  </div>
-	        <table class="table no-border">
-            <tbody>
-    	        <tr>
-    		        <td></td>
-                <td><button type="button" class="btn btn-default text-center btn-block" data-toggle="modal" data-target="#myModal">Define</button></td>
-    		        <td></td>
-    	        <tr class="blank_row"><td colspan="3"></td></tr>
-			        <tr class="blank_row"><td colspan="3"></td></tr>
-			        <tr class="blank_row"><td colspan="3"></td></tr>
-    	        <tr>
-    		        <td><button type="button" class="btn btn-default text-center btn-block" data-toggle="modal" data-target="#myModal">Treatment</button></td>
-                <td><button type="button" class="btn btn-danger text-center btn-block" data-toggle="modal" data-target="#myModal"><strong>Disease</strong></button></td>
-    		        <td><button type="button" class="btn btn-default text-center btn-block " data-toggle="modal" data-target="#myModal">Signs/Symptoms</button></td>
-    	        </tr>
-			        <tr class="blank_row"><td colspan="3"></td></tr>
-			        <tr class="blank_row"><td colspan="3"></td></tr>
-			        <tr class="blank_row"><td colspan="3"></td></tr>
-    	        <tr>
-    		        <td></td>
-                <td><button type="button" class="btn btn-default text-center btn-block" data-toggle="modal" data-target="#myModal">Diagnosis</button></td>
-    		        <td></td>
-    	        </tr>
-		        </tbody>
-          </table>
-
-
-    <a href="../image/Varus_Valgus_test.png" id="VarusValgus">test link for popover</a>
-
+    </div>
 	  <script>
-		var img = '<img src= image/Varus_Valgus_test.png />';
+		  var img = '<img src= image/Varus_Valgus_test.png />';
 
-		$("#VarusValgus").popover({ content: img, html:true, trigger:'hover'});
-	</script>
-    <footer class="container">
-		 <a href="index.html" class="btn btn-link">Home</a>
-  </footer>
+		  $("#VarusValgus").popover({ content: img, html:true, trigger:'hover'});
+	  </script>
     <script>
-		$(document).ready(function(){
+		  $(document).ready(function(){
    		$('[data-toggle="popover"]').popover({
         placement : 'top',
         trigger : 'hover'
    			 });
 				});
-</script>
+    </script>
   </body>
 </html>
