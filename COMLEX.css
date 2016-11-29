@@ -1,0 +1,54 @@
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+
+ html, body, .container-table {
+    height: 100%;
+}
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table.no-border tr td, .table.no-border tr th {
+  border-width: 0;
+}
+
+.table, tr { empty-cells: show;
+
+}
+
+td .btn {
+	horizontal-align: middle;
+	display: block;
+	margin:auto;
+}
+
+.btn {
+	width: 165px;
+}
+
+.srchbtn {
+	width: 35px;
+}
+
+  .midrw {
+  	padding: 60px;
+  }
+
+  <! this is for the center row with the red disease button-->
+  .blank_row
+{
+    height: 10px !important; /* Overwrite any previous rules */
+    background-color: #FFFFFF;
+}
+
+  .srchrw {
+	  padding-top: 10px;
+	  padding-bottom: 60px;
+  }
+
+  .custom-search-form{
+margin-top:5px;
+}
