@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1>[Hu]man Element</h1>
+     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="how can we help you today?">
+  <br><br>
+  </div>
+
+
+<ul id="myUL">
+<span class="label label-info">A</span>
+  <li><a href="#">Applications</a></li>
+  <li><a href="#">Amazon</a></li>
+  <li><a href="#">Accounting services</a></li>
+
+<span class="label label-info">B</span>
+  <li><a href="#">Bitcoin services</a></li>
+  <li><a href="#">Binance</a></li>
+  <li><a href="#">Business</a></li>
+  <li><a href="#">Business Financing</a></li>
+  <li><a href="#">Banking services</a></li>
+
+
+<span class="label label-info">C</span>
+  <li><a href="#">Cryptocurrency</a></li>
+  <li><a href="#">Credit cards</a></li>
+  <li><a href="#">Cashback sites</a></li>
+  <li><a href="#">Contracters</a></li>
+  <li><a href="#">Childcare services</a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">D</span>
+  <li><a href="#">Doctors</a></li>
+  <li><a href="#">Dentists</a></li>
+
+<span class="label label-info">E</span>
+  <li><a href="#">Ebates</a></li>
+  <li><a href="#">Electricians</a></li>
+
+<span class="label label-info">F</span>
+  <li><a href="#">Financing</a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">G</span>
+  <li><a href="#">Groupon</a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">H</span>
+  <li><a href="#">Home services</a></li>
+  <li><a href="#">Health services</a></li>
+
+<span class="label label-info">I</span>
+  <li><a href="#">Internet services</a></li>
+  <li><a href="#">Immigration services</a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">J</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">K</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">L</span>
+  <li><a href="#">Lawyers</a></li>
+  <li><a href="#">Loans</a></li>
+  <li><a href="#">Life services</a></li>
+  <li><a href="#">Life coaching services</a></li>
+
+<span class="label label-info">M</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">N</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">O</span>
+  <li><a href="#">Online marketing</a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">P</span>
+  <li><a href="#">Plumbers</a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">Q</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">R</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">S</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">T</span>
+  <li><a href="#">Towing services</a></li>
+  <li><a href="#">Technology services</a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">U</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">V</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">W</span>
+  <li><a href="#">Web design</a></li>
+  <li><a href="#">Wellness services</a></li>
+
+<span class="label label-info">X</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">Y</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+<span class="label label-info">Z</span>
+  <li><a href="#"></a></li>
+  <li><a href="#"></a></li>
+
+
+</ul>
+</div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+</html>
